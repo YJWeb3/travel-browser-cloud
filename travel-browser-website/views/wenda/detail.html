@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title></title>
+  <link href="styles/base.css" rel="stylesheet" type="text/css">
+  <link href="/js/plugins/datepicker/datepicker.css" rel="stylesheet">
+  <link href="styles/wendaDetail.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="/js/jquery/jquery.js"></script>
+  <script src="/js/plugins/js-cookie/js.cookie.min.js"></script>
+  <script type="text/javascript" src="/js/vue/common.js"></script>
+</head>
+
+<body style="position: relative;">
+  <div class="topBar">
+    <div class="topBarC">
+      <div class="logo"><a title="马蜂窝自由行" href="javascript:;">马蜂窝自由行</a></div>
+      <div class="t_nav">
+        <ul id="pnl_nav" data-cs-t="headnav_wo">
+          <li data-cs-p="index">
+            <strong class="t"><a href="javascript:;">首页</a></strong>
+          </li>
+          <li data-cs-t="wenda" data-cs-p="wenda">
+            <strong class="t"><a data-cs-p="from_wo_nav" href="javascript:;">问答</a></strong>
+          </li>
+          <li data-cs-t="things" data-cs-p="things">
+            <strong class="t"><a data-cs-p="from_wo_nav" href="javascript:;">马蜂窝周边</a></strong>
+          </li>
+          <li data-cs-p="together">
+            <strong class="t"><a href="javascript:;">结伴</a></strong>
+          </li>
+          <li data-cs-p="group">
+            <strong class="t"><a href="javascript:;">小组</a></strong>
+          </li>
+          <li data-cs-p="mall">
+            <strong class="t"><a href="javascript:;">蜂首俱乐部</a></strong>
+          </li>
+          <li class="drop" data-cs-p="other">
+            <strong class="t"><a href="javascript:;">更多<b></b></a></strong>
+          </li>
+        </ul>
+      </div>
+      <div class="t_search">
+        <form method="GET" action="/search/s.php" name="search">
+          <input type="text" class="key" value="" name="q" id="word">
+          <input type="submit" value="" class="btn">
+        </form>
+      </div>
+
+      <div class="t_info">
+        <div class="pagelet-block">
+          <ul class="user_info">
+            <li class="daka">
+              <span class="daka_btn" id="_j_dakabtn" data-japp="daka">
+                <a role="button" title="打卡" class="daka_before">打卡</a>
+                <a role="button" title="打卡推荐" class="daka_after">打卡推荐</a>
+              </span>
+            </li>
+            <li id="pnl_user_msg" data-hoverclass="on" class="msg _j_hoverclass">
+              <span id="oldmsg" class="oldmsg"><a href="javascript:;" class="infoItem">消息<b></b></a></span>
+              <ul id="head-msg-box" class="drop-bd">
+                <li><a href="javascript:;" rel="nofollow">私信</a></li>
+                <li><a href="javascript:;" rel="nofollow">小组消息</a></li>
+                <li><a href="javascript:;" rel="nofollow">系统通知</a></li>
+                <li><a href="javascript:;" rel="nofollow">问答消息</a></li>
+                <li><a href="javascript:;" rel="nofollow">回复消息</a></li>
+                <li><a href="javascript:;" rel="nofollow">喜欢与收藏</a></li>
+                <li><a href="javascript:;" rel="nofollow">好友动态</a></li>
+              </ul>
+            </li>
+            <li class="ub-item ub-new-msg" id="head-new-msg">
+            </li>
+            <li class="account _j_hoverclass" data-hoverclass="on" id="pnl_user_set">
+              <span class="t"><a class="infoItem" href="javascript:;"><img
+                    src="http://b2-q.mafengwo.net/s12/M00/35/B7/wKgED1uqIs-AMYTwAAAX-VIKIo0071.png?imageMogr2%2Fthumbnail%2F%2132x32r%2Fgravity%2FCenter%2Fcrop%2F%2132x32%2Fquality%2F90"
+                    width="32" height="32" align="absmiddle"><b></b></a></span>
+              <div class="uSet c">
+                <div class="asset">
+                  <a class="coin" href="javascript:;" target="_blank" rel="nofollow">蜂蜜 0</a>
+                  /
+                  <a class="coin" href="javascript:;" target="_blank" id="head-my-honey" rel="nofollow"
+                    data-cs-p="coin">金币 579</a>
+                </div>
+                <a href="javascript:;">我的马蜂窝<b class="tb-level">LV.3</b></a>
+                <a href="javascript:;" target="_blank">写游记</a>
+                <a href="javascript:;" target="_blank">预约游记</a>
+                <a href="javascript:;" target="_blank">我的足迹</a>
+                <a href="javascript:;" target="_blank">我的问答</a>
+                <a href="javascript:;" target="_blank">我的好友</a>
+                <a href="javascript:;" target="_blank">我的收藏</a>
+                <a href="javascript:;" target="_blank">我的路线</a>
+                <a href="javascript:;" target="_blank">我的订单</a>
+                <a href="javascript:;" target="_blank">我的优惠券</a>
+                <a href="javascript:;" target="_blank">设置</a>
+                <a href="javascript:;">退出</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="detail-wrap clearfix">
+      <div class="col-main" id="app">
+        <div class="q-detail">
+          <div class="q-content">
+            <div class="q-title">
+              <a href="/wenda/area-10065.html" target="_blank" class="location"><i></i>呼伦贝尔</a>
+              <h1>
+                <a href="/wenda/detail-18458675.html">{{question.title}}</a>
+              </h1>
+            </div>
+            <div class="q-desc">
+              在燃烧着”永恒之火"的草原上尽情吃肉在中国的饮食中，有许多食品都是从蒙古族那里传来的，如烤肉、涮羊肉等。似乎大家提到蒙古，都有一个感觉，那就是蒙古实在太爱吃肉了。其实蒙古人的饮食、是分为两个季节的，夏季和冬季。夏季为4月至10月，主要食物是奶制品...
+              <div class="area_tags _j_tip_mdd" data-mddid="10065"><a data-cs-p="qa_mdd" class="at_link"
+                  href="/travel-scenic-spot/mafengwo/10065.html" target="_blank">北京</a>
+                <div class="at_info" style="display:none;"></div>
+              </div>通勤等于取经？上下班到底有多苦？</div>
+            <div class="q-info1 clearfix">
+              <div class="q-tags fl">
+                <a class="a-tag" href="/wenda/area-10065.html" target="_blank">呼伦贝尔</a>
+              </div>
+              <div class="pub-bar fr">
+                <a href="/wenda/u/43303516/answer.html" class="photo" target="_blank"> <img
+                    src="http://b1-q.mafengwo.net/s10/M00/43/95/wKgBZ1j3rQGAW3QRAAHbR_tI2xs02.jpeg?imageMogr2%2Fthumbnail%2F%21140x105r%2Fgravity%2FCenter%2Fcrop%2F%21140x105%2Fquality%2F90"
+                    width="16" height="16"></a>
+                <a class="name" href="/wenda/u/43303516/answer.html" target="_blank">肉夹馍不会认输</a>
+                <span class="time"><span>2018-05-24 11:04</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="q-operate clearfix">
+            <div class="fl">
+              <!-- 问题分享 -->
+              <div class="q-share cate-share">
+                <a class="_js_showShare"><i class="q-share-icon"></i>分享</a>
+                <div class="share-pop _j_share_pop hide clearfix" data-title="为什么说在北京通勤等于取经？上下班到底有多苦？"
+                  data-qid="18458675">
+                  <a title="分享到新浪微博" class="sina _j_do_share" data-site="wb"></a>
+                  <a title="分享到QQ空间" class="zone _j_do_share" data-site="qz"></a>
+                  <a title="分享到微信" class="weixin _j_do_share_wx" data-site="wx"></a>
+                </div>
+              </div>
+              <!-- 邀请回答 -->
+              <div class="seek-help _j_tip_box">
+                <a class="_j_seek_help_new">邀请蜂蜂回答</a>
+              </div>
+              <!-- 举报 -->
+              <div class="admin_hide tip-off">
+                <a data-japp="report" data-refer="http://www.mafengwo.cn/wenda/detail-18458675.html"
+                  data-refer-uid="43303516" data-app="qa.question" data-busi-id="qid:18458675">举报</a>
+              </div>
+            </div>
+            <div class="fr">
+              <span class="atten-num">887浏览</span>
+              <span class="atten-num"><span class="_j_same_num">1</span>人关注</span>
+
+              <a class="btn-atten _j_same_question " rel="nofollow" data-status="1"><span>关注</span></a>
+
+              <a class="btn-answer _j_btn_goanswer" rel="nofollow">回答</a>
+            </div>
+          </div>
+        </div>
+        <!--<div class="answer-wrap">
+          <div class="hd">
+            <a href="javascript:;" class="view_all">查看全部12个回答</a>
+            <div style="display:none;"><span id="_j_anum">12</span>个回答</div>
+          </div>
+          <div class="bd _j_pager_box">
+            <ul class="answer-list answer_detail">
+              <div>
+                <li>
+                  <div class="answer-side _js_answerAva">
+                  </div>
+                  <div class="answer-content _js_answer_content">
+                    <div class="answer-info clearfix">
+                      <div class="user-bar fl">
+                        <a class="_j_filter_click avatar" href="javascript:;" target="_blank"><img
+                            src="http://p4-q.mafengwo.net/s7/M00/11/82/wKgB6lT4WTOACq5EAAAGg4I64pY55.jpeg?imageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90"
+                            width="48" height="48" class="photo"></a>
+                        <a class="name" href="javascript:;" target="_blank">何为归处</a>
+                        <a class="level" href="javascript:;" target="_blank" rel="nofollow">LV.21</a>
+                        <a class="identity i-guide" href="javascript:;" target="_blank">指路人</a>
+                      </div>
+                      <ul class="answer-medal fr">
+                        <li class="gold">
+                          <div class="btn"><i></i><a href="javascript:;" target="_blank">金牌回答</a></div>
+                        </li>
+                      </ul>
+                    </div>
+                    &lt;!&ndash; 回答内容 &ndash;&gt;
+                    <div class="_j_short_answer_item hide" style="display: block;">
+                      我从12年开始来北京工作，老窝一直没挪过，都在机场旁。但是我工作单位换过几家。可以来跟你们唠唠几个艰辛地方。1、机场—昌平科技园这是我最开始的上班路线。那时候昌平线只开通到南邵站。每天早上我五点半从家里出来，拼个车子到15号线国展，15
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </ul>
+          </div>
+          <div class="bd _j_pager_box">
+            <div class="aa-hd">
+              <a class="aa-avatar" href="/wenda/u/53383161/answer.html"><img
+                  src="http://n1-q.mafengwo.net/s12/M00/35/98/wKgED1uqIreAU9QZAAAXHQMBZ74008.png?imageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90"
+                  class="photo"></a>
+              <a class="aa-name">蚂蜂测试窝用户</a>
+            </div>
+            <div class="editor-outer _j_editorOuter _js_editorWrap _js_forFixTitle">
+              <textarea></textarea>
+            </div>
+            <div class="aa-ft">
+              <input class="btn-comment _j_submit_answer_btn" type="button" value="提交回答"/>
+            </div>
+          </div>
+        </div>-->
+      </div>
+      <div class="col-side"></div>
+    </div>
+  </div>
+  <!--内容-->
+  <div class="footer" id="footer">
+    <script>
+      $('#footer').load('/views/common/footer.html');
+    </script>
+  </div>
+</body>
+
+<script src="/js/vue/vue.min.js"></script>
+<script src="/js/vue/system/wenda/detail.js"></script>
+
+</html>

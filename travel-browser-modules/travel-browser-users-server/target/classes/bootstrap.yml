@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: travel-browser-user-service
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848 #nacos中心地址
+      config:
+        file-extension: yaml # 配置文件格式
+        namespace: b6140b43-e2b7-450b-8165-f38505719842
+        # 告诉配置中心需要从远程额外拉取哪些配置文件
+        shared-configs:
+          - dataId: redis-dev.yaml
+          - dataId: jwt-dev.yaml
+  # 配置文件的环境
+  profiles:
+    # 使用哪一种环境
+    active: dev # 环境标识
+security:
+  rsa:
+    private-key: MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAJeboxgKY/1Mj3hAI546ywcda39nOBGqbVD6P+js0kv42UOCaEk8VDVWDF0lsWeiszA41j7ZdhxkC5LvJU1XzOe2f6y4mvKDlBKUW/z/goQw9azrex5mG+wAcJ0WUgc3Y6onOxopzn1/5F61mgBjTbVX4CXG8AVOhNhOEGKX+FdzAgMBAAECgYAVa9xDjVRLegHbj9R4iv4c5z9FJSR6+oWvp2xYUP311hd8vnRVxLxxPNNKZgUHC6od6in7f2Z85HXuMPQoVXuSGa9tmrL2bOh9XiNqVD04B3QgeAuNqxnK7xrjFNNPYDXRxcM15rBRgCg4V+yfcB04RHfwT6+Ei6i917gnT7ib4QJBAOMG6QwjhPGQOZMoVGm/pA3ir9gk75bi47w8boMj9R62z37El3QKnVkX1YAZJ1cvnkIMMBk7JNR4g0KrzcUh6w0CQQCq9L9pqJs+qlKvIKAUZDV9FaUL7U16a5+E9IlC1Jp1a+MS7WWS+w0lUFZWNY7vrfLEbt14oaEGV7VZhR6dGKx/AkEAlcjOY3Lf2JzGT7/xCaAl9f9U8y9TX+KsTFo2s5E6vRvyBHpiTm5eaBSgiRaPbSd+q6bs6QirgP9N4uQFLAX31QJBAIAtCwr8OJGugFn/2yYO0C/dt6aOoKWl5a947SUnZDufzVwWlC60fnG4n1L5yxaXVErFWNYmUSYBQt5AuehNZJ8CQAd9tMLK5NRl0oe8wxFNtcjp+iJ7JmiZ8qrbUvTRZ1+LbLbbXYg+BCiiWYjC5eZCG2vBroemUuMUxWU+v/0r4g4=

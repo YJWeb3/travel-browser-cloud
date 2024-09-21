@@ -1,0 +1,4 @@
+com\zheng\travel\browser\redis\key\KeyPrefix.class
+com\zheng\travel\browser\redis\utils\RedisCache.class
+com\zheng\travel\browser\redis\config\TravelRedisAutoConfiguration.class
+com\zheng\travel\browser\redis\key\BaseKeyPrefix.class

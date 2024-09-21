@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zheng.travel.browser.user.mapper.UserInfoMapper">
+
+    <insert id="insertFavorStrategy">
+        insert into user_favor_strategies values(#{userId}, #{strategyId})
+    </insert>
+
+    <delete id="deleteFavorStrategy">
+        delete from user_favor_strategies where user_id = #{userId} and strategy_id = #{strategyId}
+    </delete>
+
+    <select id="selectFavorStrategyIdList" resultType="java.lang.Long">
+        select strategy_id from user_favor_strategies where user_id = #{userId}
+    </select>
+</mapper>

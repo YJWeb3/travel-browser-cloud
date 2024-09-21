@@ -1,0 +1,5 @@
+com\zheng\travel\browser\search\domain\UserInfoEs.class
+com\zheng\travel\browser\search\qo\SearchQueryObject.class
+com\zheng\travel\browser\search\domain\DestinationEs.class
+com\zheng\travel\browser\search\domain\StrategyEs.class
+com\zheng\travel\browser\search\domain\TravelEs.class

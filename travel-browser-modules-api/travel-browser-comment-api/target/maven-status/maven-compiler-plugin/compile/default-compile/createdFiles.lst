@@ -1,0 +1,3 @@
+com\zheng\travel\browser\comment\domain\TravelComment.class
+com\zheng\travel\browser\comment\qo\CommentQuery.class
+com\zheng\travel\browser\comment\domain\StrategyComment.class

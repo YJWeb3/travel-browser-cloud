@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <artifactId>travel-browser-modules-api</artifactId>
+        <groupId>com.zheng.travel</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>travel-browser-users-api</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <!--
+                1. 使该依赖只在编译时期与测试时期生效, 运行时期是不生效的
+                2. 阻止依赖的传递性
+            -->
+            <!--            <scope>provided</scope>-->
+        </dependency>
+        <dependency>
+            <groupId>com.zheng.travel</groupId>
+            <artifactId>travel-browser-common-redis</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+</project>

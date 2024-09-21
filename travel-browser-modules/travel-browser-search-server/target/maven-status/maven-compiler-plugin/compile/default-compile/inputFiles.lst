@@ -1,0 +1,10 @@
+D:\yjxz\YJ_Class\projects\Travel\code\travel-browser-cloud\travel-browser-modules\travel-browser-search-server\src\main\java\com\zheng\travel\browser\search\controller\SearchController.java
+D:\yjxz\YJ_Class\projects\Travel\code\travel-browser-cloud\travel-browser-modules\travel-browser-search-server\src\main\java\com\zheng\travel\browser\search\service\impl\ElasticsearchServiceImpl.java
+D:\yjxz\YJ_Class\projects\Travel\code\travel-browser-cloud\travel-browser-modules\travel-browser-search-server\src\main\java\com\zheng\travel\browser\search\utils\BeanUtils.java
+D:\yjxz\YJ_Class\projects\Travel\code\travel-browser-cloud\travel-browser-modules\travel-browser-search-server\src\main\java\com\zheng\travel\browser\search\service\ElasticsearchService.java
+D:\yjxz\YJ_Class\projects\Travel\code\travel-browser-cloud\travel-browser-modules\travel-browser-search-server\src\main\java\com\zheng\travel\browser\search\controller\ElasticsearchDataInitController.java
+D:\yjxz\YJ_Class\projects\Travel\code\travel-browser-cloud\travel-browser-modules\travel-browser-search-server\src\main\java\com\zheng\travel\browser\search\vo\SearchResult.java
+D:\yjxz\YJ_Class\projects\Travel\code\travel-browser-cloud\travel-browser-modules\travel-browser-search-server\src\main\java\com\zheng\travel\browser\search\feign\ArticleFeignService.java
+D:\yjxz\YJ_Class\projects\Travel\code\travel-browser-cloud\travel-browser-modules\travel-browser-search-server\src\main\java\com\zheng\travel\browser\search\feign\UserInfoFeignService.java
+D:\yjxz\YJ_Class\projects\Travel\code\travel-browser-cloud\travel-browser-modules\travel-browser-search-server\src\main\java\com\zheng\travel\browser\search\parser\ElasticsearchTypeParser.java
+D:\yjxz\YJ_Class\projects\Travel\code\travel-browser-cloud\travel-browser-modules\travel-browser-search-server\src\main\java\com\zheng\travel\browser\search\TravelBrowserSearchApplication.java

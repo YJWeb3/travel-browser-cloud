@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: travel-browser-comment-service
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848 #nacos中心地址
+      config:
+        file-extension: yaml # 配置文件格式
+        namespace: b6140b43-e2b7-450b-8165-f38505719842
+        # 告诉配置中心需要从远程额外拉取哪些配置文件
+        shared-configs:
+          - dataId: redis-dev.yaml
+          - dataId: jwt-dev.yaml
+  # 配置文件的环境
+  profiles:
+    # 使用哪一种环境
+    active: dev # 环境标识
+logging:
+  level:
+    com.zheng.travel.browser.article.mapper: DEBUG

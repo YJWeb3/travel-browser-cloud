@@ -1,0 +1,5 @@
+com\zheng\travel\browser\user\dto\UserInfoDTO.class
+com\zheng\travel\browser\user\vo\LoginUser.class
+com\zheng\travel\browser\user\domain\UserInfo.class
+com\zheng\travel\browser\user\redis\key\UserRedisKeyPrefix.class
+com\zheng\travel\browser\user\vo\RegisterRequest.class

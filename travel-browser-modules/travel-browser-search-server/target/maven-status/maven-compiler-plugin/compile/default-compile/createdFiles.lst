@@ -1,0 +1,11 @@
+com\zheng\travel\browser\search\vo\SearchResult.class
+com\zheng\travel\browser\search\service\ElasticsearchService.class
+com\zheng\travel\browser\search\feign\ArticleFeignService.class
+com\zheng\travel\browser\search\controller\ElasticsearchDataInitController$EsDataInitStrategy.class
+com\zheng\travel\browser\search\controller\SearchController.class
+com\zheng\travel\browser\search\controller\ElasticsearchDataInitController.class
+com\zheng\travel\browser\search\service\impl\ElasticsearchServiceImpl.class
+com\zheng\travel\browser\search\utils\BeanUtils.class
+com\zheng\travel\browser\search\feign\UserInfoFeignService.class
+com\zheng\travel\browser\search\parser\ElasticsearchTypeParser.class
+com\zheng\travel\browser\search\TravelBrowserSearchApplication.class

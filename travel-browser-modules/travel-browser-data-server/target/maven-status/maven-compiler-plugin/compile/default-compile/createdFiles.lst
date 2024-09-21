@@ -1,0 +1,8 @@
+com\zheng\travel\browser\data\job\StrategyRankStatisJob.class
+com\zheng\travel\browser\data\mapper\StrategyMapper.class
+com\zheng\travel\browser\data\service\impl\StrategyServiceImpl.class
+com\zheng\travel\browser\data\job\MyTestJob.class
+com\zheng\travel\browser\data\job\StrategyStatDataPersistenceJob.class
+com\zheng\travel\browser\data\mapper\StrategyRankMapper.class
+com\zheng\travel\browser\data\TravelBrowserDataApplication.class
+com\zheng\travel\browser\data\service\StrategyService.class

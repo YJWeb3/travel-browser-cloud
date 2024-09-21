@@ -1,0 +1,12 @@
+com\zheng\travel\browser\user\advice\ControllerExceptionAdvice.class
+com\zheng\travel\browser\user\config\AliyunConfig.class
+com\zheng\travel\browser\user\controller\TestController.class
+com\zheng\travel\browser\user\controller\Test1Controller.class
+com\zheng\travel\browser\user\controller\UserInfoController.class
+com\zheng\travel\browser\user\feign\ArticleFeignService.class
+com\zheng\travel\browser\user\service\UserInfoService.class
+com\zheng\travel\browser\user\mapper\UserInfoMapper.class
+com\zheng\travel\browser\user\TravelUserApplication.class
+com\zheng\travel\browser\user\service\impl\UserServiceImpl.class
+com\zheng\travel\browser\user\controller\SmsController.class
+com\zheng\travel\browser\user\service\impl\SmsServiceImpl.class

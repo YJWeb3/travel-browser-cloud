@@ -1,0 +1,5 @@
+com\zheng\travel\browser\config\WebConfig$1.class
+com\zheng\travel\browser\BrowserGatewayApplication.class
+com\zheng\travel\browser\handler\SwaggerHandler.class
+com\zheng\travel\browser\provider\SwaggerProvider.class
+com\zheng\travel\browser\config\WebConfig.class

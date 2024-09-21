@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="/assets/css/codemirror.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/ace.min.css"/>
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css"/>
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="/assets/css/font-awesome-ie7.min.css"/>
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/assets/css/ace-ie.min.css"/>
+    <![endif]-->
+    <script src="/assets/js/jquery.min.js"></script>
+    <!-- <![endif]-->
+    <!--[if IE]>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <![endif]-->
+    <!--[if !IE]> -->
+    <script type="text/javascript">
+        window.jQuery || document.write("&lt;script src='/assets/js/jquery-2.0.3.min.js'>" + "&lt;" + "/script>");
+    </script>
+    <!-- <![endif]-->
+    <!--[if IE]>
+    <script type="text/javascript">
+        window.jQuery || document.write("<script src='/assets/js/jquery-1.10.2.min.js'>" + "<" + "/script>");
+    </script>
+    <![endif]-->
+    <script type="text/javascript">
+        if ("ontouchend" in document) document.write("&lt;script src='/assets/js/jquery.mobile.custom.min.js'>" + "&lt;" + "/script>");
+    </script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/typeahead-bs2.min.js"></script>
+    <!-- page specific plugin scripts -->
+    <link rel="stylesheet" href="/assets/js/bootstrap-table/bootstrap-table.min.css">
+    <script src="/assets/js/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="/assets/js/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+
+
+    <script type="text/javascript" src="/js/H-ui.js"></script>
+    <script type="text/javascript" src="/js/H-ui.admin.js"></script>
+    <script src="/assets/layer/layer.js" type="text/javascript"></script>
+    <script src="/assets/laydate/laydate.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery-form/jquery.form.js"></script>
+
+    <title>游记列表</title>
+    <style> [v-cloak]{display: none;}</style>
+    <script src="/js/vue/vue.min.js"></script>
+    <script src="/js/vue/common.js"></script>
+
+</head>
+
+<body>
+<div class="page-content clearfix" id="app" v-cloak>
+    <div class="clearfix">
+        <div class="home_btn">
+            <div>
+                <a href="JavaScript:void(0);"  title="添加商品" class="btn  btn-info btn-sm no-radius" @click="refreshStrategyStatis">
+                    <i class="bigger-200"><img src="/images/icon-addp.png" /></i>
+                    <h5 class="margin-top">刷新攻略统计</h5>
+                </a>
+                <a href="JavaScript:void(0);"  title="产品分类" class="btn  btn-primary btn-sm no-radius" @click="strategyStatisPersistence">
+                    <i class="bigger-200"><img src="/images/icon-cpgl.png" /></i>
+                    <h5 class="margin-top">攻略统计落盘</h5>
+                </a>
+                <a href="JavaScript:void(0);" title="个人信息" class="btn  btn-success btn-sm no-radius" @click="esDataInit">
+                    <i class="bigger-200"><img src="/images/icon-grxx.png" /></i>
+                    <h5 class="margin-top">ES初始化</h5>
+                </a>
+                <a href="JavaScript:void(0);"  title="系统设置" class="btn  btn-info btn-sm no-radius">
+                    <i class="bigger-200"><img src="/images/xtsz.png" /></i>
+                    <h5 class="margin-top">......</h5>
+                </a>
+                <a href="JavaScript:void(0);"  title="商品订单" class="btn  btn-purple btn-sm no-radius">
+                    <i class="bigger-200"><img src="/images/icon-gwcc.png" /></i>
+                    <h5 class="margin-top">......</h5>
+                </a>
+                <a href="JavaScript:void(0);"  title="添加广告" class="btn  btn-pink btn-sm no-radius">
+                    <i class="bigger-200"><img src="/images/icon-ad.png" /></i>
+                    <h5 class="margin-top">......</h5>
+                </a>
+                <a href="JavaScript:void(0);"  title="添加文章" class="btn  btn-info btn-sm no-radius">
+                    <i class="bigger-200"><img src="/images/icon-addwz.png" /></i>
+                    <h5 class="margin-top">......</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script src="/js/vue/datainit/list.js"></script>
+</html>
+
+

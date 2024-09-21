@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/travel-browser-common/travel-browser-common-auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/travel-browser-common/travel-browser-common-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/travel-browser-common/travel-browser-common-redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/travel-browser-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/travel-browser-modules-api/travel-browser-article-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/travel-browser-modules-api/travel-browser-comment-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/travel-browser-modules-api/travel-browser-search-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/travel-browser-modules-api/travel-browser-users-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/travel-browser-modules/travel-browser-article-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/travel-browser-modules/travel-browser-comment-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/travel-browser-modules/travel-browser-data-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/travel-browser-modules/travel-browser-search-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/travel-browser-modules/travel-browser-users-server/src/main/java" charset="UTF-8" />
+  </component>
+</project>

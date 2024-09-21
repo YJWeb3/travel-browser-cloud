@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="travel-browser-data-server" />
+        <module name="travel-browser-common-auth" />
+        <module name="travel-browser-article-api" />
+        <module name="travel-browser-search-api" />
+        <module name="travel-browser-users-api" />
+        <module name="travel-browser-article-server" />
+        <module name="travel-browser-comment-server" />
+        <module name="travel-browser-comment-api" />
+        <module name="travel-browser-users-server" />
+        <module name="travel-browser-common-redis" />
+        <module name="travel-browser-gateway" />
+        <module name="travel-browser-common-core" />
+        <module name="travel-browser-search-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="travel-browser-mgrsite" target="1.8" />
+      <module name="travel-browser-website" target="1.8" />
+      <module name="untitled" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="travel-browser-article-api" options="-parameters" />
+      <module name="travel-browser-article-server" options="-parameters" />
+      <module name="travel-browser-comment-api" options="-parameters" />
+      <module name="travel-browser-comment-server" options="-parameters" />
+      <module name="travel-browser-common" options="-parameters" />
+      <module name="travel-browser-common-auth" options="-parameters" />
+      <module name="travel-browser-common-core" options="-parameters" />
+      <module name="travel-browser-common-redis" options="-parameters" />
+      <module name="travel-browser-data-server" options="-parameters" />
+      <module name="travel-browser-gateway" options="-parameters" />
+      <module name="travel-browser-mgrsite" options="-parameters" />
+      <module name="travel-browser-modules" options="-parameters" />
+      <module name="travel-browser-modules-api" options="-parameters" />
+      <module name="travel-browser-search-api" options="-parameters" />
+      <module name="travel-browser-search-server" options="-parameters" />
+      <module name="travel-browser-users-api" options="-parameters" />
+      <module name="travel-browser-users-server" options="-parameters" />
+      <module name="travel-browser-website" options="-parameters" />
+    </option>
+  </component>
+</project>

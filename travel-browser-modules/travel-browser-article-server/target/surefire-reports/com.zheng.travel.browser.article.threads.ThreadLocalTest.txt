@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.zheng.travel.browser.article.threads.ThreadLocalTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 600.006 s - in com.zheng.travel.browser.article.threads.ThreadLocalTest
